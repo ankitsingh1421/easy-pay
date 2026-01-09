@@ -8,7 +8,7 @@ export const logined = atom({
 
 export const baseurl = atom({
     key:"baseurl",
-    default:""
+    default:"https://easy-pay-q4a0.onrender.com/"
 })
 
 export const navatom = atom({
