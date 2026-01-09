@@ -1,5 +1,5 @@
 # Pay Now
-![Ankit Singh](./frontend/src/deff.jpeg)
+![Ankit Singh](./frontend/deff.jpeg)
 [Live Deployment](https://easy-pay-lemon.vercel.app/)
 
 
