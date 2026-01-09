@@ -8,7 +8,7 @@ const route = require("./routes/routes");
 const app = express();
 app.use(cors(
     {
-        origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173', 'https://easy-pay-lemon.vercel.app'],
         credentials: true
     }
 ));
