@@ -1,5 +1,5 @@
 # Pay Now
-![](https://github.com/ankitsingh1421/easy-pay/blob/main/images/default.jpg)
+![](https://github.com/ankitsingh1421/easy-pay/blob/main/frontend/src/deff.jpeg)
 [Live Deployment](https://easy-pay-lemon.vercel.app/)
 
 
