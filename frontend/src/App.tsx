@@ -19,10 +19,12 @@ const Payment = React.lazy(() => import('./component/payment/payment'));
 const Notfound = React.lazy(() => import('./component/notfound/notfound'));
 const Loan = React.lazy(() => import('./component/loan/loan'));
 const Bills = React.lazy(() => import('./component/Bills/Bills'));
+const Logout = React.lazy(() => import('./component/logout/logout'));
+
 
 function App() {
   return (
-    <div className="h-screen w-screen">
+    <div className="w-screen h-screen">
       <RecoilRoot>
         <NextUIProvider>
         <BrowserRouter>
@@ -39,7 +41,7 @@ function AnimatedRoutes() {
   return (
     <>
       <AnimatePresence>
-        <Suspense fallback={<div className='h-screen flex justify-center items-center'>Loading...</div>}>
+        <Suspense fallback={<div className='flex items-center justify-center h-screen'>Loading...</div>}>
           <Routes location={location} key={location.pathname}>
             <Route element={<Auth />}>
               <Route path="/home" element={<Animate><Home /></Animate>} />
@@ -50,6 +52,8 @@ function AnimatedRoutes() {
               <Route path="/loan/*" element={<Animate><Loan /></Animate>} />
               <Route path="/bills" element={<Animate><Bills /></Animate>} />
               <Route path="/payment" element={<Payment />} />
+                <Route path="/logout" element={<Logout />} />
+
             </Route>
             <Route>
               <Route path="/" element={<Defaultpage />} />
@@ -65,7 +69,7 @@ function AnimatedRoutes() {
 
 function Animate({ children }: { children: ReactNode }) {
   return (
-    <div className='flex flex-col-reverse sm:flex-row w-screen'>
+    <div className='flex flex-col-reverse w-screen sm:flex-row'>
       <Navbar />
         <motion.div
           initial={{ opacity: 0 }}
