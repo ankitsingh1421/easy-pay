@@ -9,24 +9,24 @@ export default function Footr(){
 
 
     return (
-        <footer className="bg-gray-800 text-white py-8">
-          <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+        <footer className="py-8 text-white bg-gray-800">
+          <div className="container grid grid-cols-1 gap-8 px-4 mx-auto md:grid-cols-3">
             
             {/* Social Media Section */}
             <div>
-              <h2 className="text-lg font-bold mb-4">Follow Us</h2>
-              <div className="flex space-x-2 w-10 ">
-                <img src={fb} alt="facebook" className="hover:scale-150 transition" />
-                <img src={ig} alt="instagream"  className="hover:scale-150 transition"/>
-                <img src={x} alt="twitter" className="hover:scale-150 transition"/>
-                <img src={wa} alt="Whatsaap"  className="hover:scale-150 transition"/>
+              <h2 className="mb-4 text-lg font-bold">Follow Us</h2>
+              <div className="flex w-10 space-x-2 ">
+                <img src={fb} alt="facebook" className="transition hover:scale-150" />
+                <img src={ig} alt="instagream"  className="transition hover:scale-150"/>
+                <img src={x} alt="twitter" className="transition hover:scale-150"/>
+                <img src={wa} alt="Whatsaap"  className="transition hover:scale-150"/>
                 
               </div>
             </div>
     
             {/* Quick Links Section */}
             <div>
-              <h2 className="text-lg font-bold mb-4">Quick Links</h2>
+              <h2 className="mb-4 text-lg font-bold">Quick Links</h2>
               <ul>
                 <li><a href="#" className="hover:underline">About Us</a></li>
                 <li><a href="#" className="hover:underline">Services</a></li>
@@ -37,7 +37,7 @@ export default function Footr(){
     
             {/* Contact Section */}
             <div>
-              <h2 className="text-lg font-bold mb-4">Contact Us</h2>
+              <h2 className="mb-4 text-lg font-bold">Contact Us</h2>
               <p>1234 Street Name, City</p>
               <p>Email: info@example.com</p>
               <p>Phone: +123 456 7890</p>
@@ -45,8 +45,10 @@ export default function Footr(){
     
           </div>
     
-          <div className="flex justify-center items-center flex-col mt-8 text-center text-gray-500">
-            <img src={gh} alt="Github" className="w-8 hover:scale-150 transition" />
+          <div className="flex flex-col items-center justify-center mt-8 text-center text-gray-500">
+<a href="https://github.com/ankitsingh1421/easy-pay.git" target="_blank" rel="noopener noreferrer">
+  <img src={gh} alt="Github" className="w-8 transition hover:scale-150" />
+</a>
             <p>&copy; {new Date().getFullYear()} Your Company. All rights reserved.</p>
           </div>
         </footer>
